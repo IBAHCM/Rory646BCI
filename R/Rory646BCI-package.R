@@ -1,16 +1,12 @@
-#' Rory646BCI
+#' Barro Colorado Island data package
 #'
-#' \code{Rory646BCI} is a dummy package developed as part of the Reproducible
-#' Programming in R course..
+#' Package for Series 4 of the RPiR course, created to hold BCI
+#' data and functions created to analyse diversity.
 #'
-#' This text will appear in the Details section of the documentation.
-#'
-#' @author
-#' Rory <2188096T@student.gla.ac.uk> (maintainer) \cr
+#' @import magrittr
 #'
 #' @name Rory646BCI-package
 #' @aliases Rory646BCI
 #' @docType package
-#'
 #'
 NULL

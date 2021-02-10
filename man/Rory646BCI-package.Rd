@@ -4,14 +4,8 @@
 \name{Rory646BCI-package}
 \alias{Rory646BCI-package}
 \alias{Rory646BCI}
-\title{Rory646BCI}
+\title{Barro Colorado Island data package}
 \description{
-\code{Rory646BCI} is a dummy package developed as part of the Reproducible
-Programming in R course..
-}
-\details{
-This text will appear in the Details section of the documentation.
-}
-\author{
-Rory <2188096T@student.gla.ac.uk> (maintainer) \cr
+Package for Series 4 of the RPiR course, created to hold BCI
+data and functions created to analyse diversity.
 }
