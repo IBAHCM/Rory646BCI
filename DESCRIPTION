@@ -13,3 +13,9 @@ BugReports: https://github.com/IBAHCM/Rory646BCI/issues
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Imports: 
+    dplyr,
+    devtools,
+    reshape2,
+    usethis,
+    tibble
