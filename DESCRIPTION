@@ -18,4 +18,5 @@ Imports:
     devtools,
     reshape2,
     usethis,
-    tibble
+    tibble,
+    magrittr
