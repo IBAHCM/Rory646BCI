@@ -38,7 +38,7 @@ results <- meta_gamma(meta, qs = seq(from = 0, to = 5))
 
 plot(diversity ~ q, type = "l", data = results)
 
-#' Taking into account similarity between species
+## Taking into account similarity between species
 
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies = 0, Genus = 1, Family = 2, Other = 3)) %>%
@@ -52,8 +52,7 @@ results4tax <- meta_gamma(metatax, qs = seq(from = 0, to = 5))
 
 lines(diversity ~ q, col = 2, data = results4tax)
 
-#' Taking into account similarity between genera
-#'
+## Taking into account similarity between genera
 
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies=0, Genus=0, Family= 1, Other= 2)) %>%
@@ -65,8 +64,7 @@ results4tax <- meta_gamma(metatax, qs = 0:5)
 
 lines(diversity ~ q, col = 3, data = results4tax)
 
-#' Taking into account similarity between families
-#'
+## Taking into account similarity between families
 
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies=0, Genus=0, Family=0, Other=1)) %>%
@@ -93,7 +91,7 @@ results <- norm_meta_alpha(meta, qs = seq(from = 0, to = 5))
 
 plot(diversity ~ q, type = "l", data = results)
 
-#' Taking into account similarity between species
+## Taking into account similarity between species
 
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies = 0, Genus = 1, Family = 2, Other = 3)) %>%
@@ -107,8 +105,7 @@ results4tax <- norm_meta_alpha(metatax, qs = 0:5)
 
 lines(diversity ~ q, col =2, data = results4tax)
 
-#' Taking into account similarity between genera
-#'
+## Taking into account similarity between genera
 
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies=0, Genus=0, Family= 1, Other= 2)) %>%
@@ -120,8 +117,7 @@ results4tax <- norm_meta_alpha(metatax, qs = 0:5)
 
 lines(diversity ~ q, col = 3, data = results4tax)
 
-#' Taking into account similarity between families
-#'
+## Taking into account similarity between families
 
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies=0, Genus=0, Family=0, Other=1)) %>%
@@ -198,3 +194,9 @@ sor.data <- as.matrix(beta.sor$a)
 sor.means <- rowMeans(sor.data)
 
 plot(sor.means)
+
+
+#' ## Conclusions
+#'
+#' As you can see both diversity measures follow the same general trend and the lowest value for both is
+#' found when the index = 100.
