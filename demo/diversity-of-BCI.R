@@ -46,7 +46,7 @@ taxSim <- taxonomy %>%
 
 metatax <- metacommunity(bci_2010, taxSim)
 
-results4tax <- meta_gamma(metatax, qs = 0:5)
+results4tax <- meta_gamma(metatax, qs = seq(from = 0, to = 5))
 
 # Add line to previous graph
 
