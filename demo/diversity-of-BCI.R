@@ -50,7 +50,7 @@ results4tax <- meta_gamma(metatax, qs = 0:5)
 
 # Add line to previous graph
 
-lines(diversity ~ q, col =2, data = results4tax)
+lines(diversity ~ q, col = 2, data = results4tax)
 
 #' Taking into account similarity between genera
 #'
@@ -164,24 +164,37 @@ beta.div <- raw_sub_beta(meta, qs = 1)
 
 hist(beta.div$diversity)
 
-#' Th histogram has the majority of subcommunities in the same interval if the histogram, showing that
+#' The histogram has the majority of subcommunities in the same interval in the histogram, showing that
 #' there is little difference between the diversity of the majority of subcommunities.
 
 #'  ## Analysis using Vegan Package
 #'
 #'  Preparing dataset for vegan package
 
-#Swap rows and columns, for format suitable to use with vegan
+# Swap rows and columns, for format suitable to use with vegan
 
 abundances <- t(bci_2010)
 
-#Calculate species richness (gamma diversity)
+# Calculate species richness (gamma diversity)
 
 specnumber(abundances, groups = 1)
 
-?betadiver
+#' Jaccard
+beta.jac <- betadiver(abundances, measure = "j")
 
-beta.div <- betadiver(abundances, measure = "j")
+jac.data <- as.matrix(beta.jac$a)
 
-plot(beta.div$diversity ~ beta.div$)
+jac.means <- rowMeans(jac.data)
 
+plot(jac.means)
+
+
+#' Sorensen
+
+beta.sor <- betadiver(abundances, measure = "sor")
+
+sor.data <- as.matrix(beta.sor$a)
+
+sor.means <- rowMeans(sor.data)
+
+plot(sor.means)
