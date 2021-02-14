@@ -19,4 +19,6 @@ Imports:
     reshape2,
     usethis,
     tibble,
-    magrittr
+    magrittr,
+    rdiversity,
+    vegan
