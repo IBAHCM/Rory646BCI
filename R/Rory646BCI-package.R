@@ -4,6 +4,13 @@
 #' data and functions created to analyse diversity.
 #'
 #' @import magrittr
+#' @import dplyr
+#' @import devtools
+#' @import reshape2
+#' @import usethis
+#' @import tibble
+#' @import rdiversity
+#' @import vegan
 #'
 #' @name Rory646BCI-package
 #' @aliases Rory646BCI

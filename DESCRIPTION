@@ -3,7 +3,7 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Authors@R: person("Rory", "Thomson", email = "2188096T@student.gla.ac.uk",
-           role = c("cre", "aut"), comment = c(ORCID = "0000-0003-1536-2066")) 
+           role = c("cre", "aut")) 
 Description: Package created as part of the RPiR to carry out diversity analysis.
 License: What license is it under?
 Encoding: UTF-8
