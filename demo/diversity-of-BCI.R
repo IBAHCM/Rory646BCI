@@ -32,8 +32,8 @@ meta <- metacommunity(bci_2010)
 
 #' ## Gamma Diversity
 #'
-#' Diversity of whole metacommunity
-#'
+## Diversity of whole metacommunity
+
 results <- meta_gamma(meta, qs = seq(from = 0, to = 5))
 
 plot(diversity ~ q, type = "l", data = results)
@@ -82,11 +82,12 @@ lines(diversity ~ q, col = 4, data = results4tax)
 #' diversity decreases. You can also see that diversity decreases when calculating the analysis of the
 #' metacommunity (black), taking account similarity of species (red), similarity between genera (green)
 #' and similarity between families (blue).
+#'
 
 #' ## Alpha diversity
 #'
-#' Diversity of whole metacommunity
-#'
+## Diversity of whole metacommunity
+
 results <- norm_meta_alpha(meta, qs = seq(from = 0, to = 5))
 
 plot(diversity ~ q, type = "l", data = results)
@@ -129,7 +130,7 @@ results4tax <- norm_meta_alpha(metatax, qs = 0:5)
 
 lines(diversity ~ q, col = 4, data = results4tax)
 
-#' ### Conclusions
+#' ## Conclusions
 #'
 #' As you can see in each analysis as q increases, and therefore weighting of abundance in analysis, the
 #' diversity decreases. You can also see that diversity decreases when calculating the analysis of the
@@ -139,7 +140,7 @@ lines(diversity ~ q, col = 4, data = results4tax)
 #' When compared to the gamma diversity graph, you can see that the diversity calculated is lower is this
 #' due to alpha diversity being a measure of the average diversity across subcommunities whereas the gamma
 #' diversity is a measure of the whole metacommunity.
-
+#'
 
 #' ## Beta Diversity
 #'
@@ -162,8 +163,9 @@ hist(beta.div$diversity)
 
 #' The histogram has the majority of subcommunities in the same interval in the histogram, showing that
 #' there is little difference between the diversity of the majority of subcommunities.
-
-#'  ## Analysis using Vegan Package
+#'
+#'
+#' ## Analysis using Vegan Package
 #'
 #'  Preparing dataset for vegan package
 
